@@ -27,4 +27,5 @@ Pick an image or a document, and the recognized text is printed to the console. 
 
 ## Contact
 
-Questions or ideas? Open an issue or email rayanchicho@gmail.com.
+Questions or ideas? Open an issue or email 
+ray.pybot@gmail.com.
