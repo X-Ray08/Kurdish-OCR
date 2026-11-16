@@ -1,36 +1,30 @@
 # Kurdish-OCR
-first Kurdish(Badini-Sorani) OCR
 
-please read me before getting into it 
+A Kurdish OCR tool for the Badini and Sorani dialects, built on Tesseract and OpenCV with a simple desktop interface.
 
-this program is only for test and not published yet 
-6 sep 2022
+It's still an early prototype, so expect rough edges.
 
+## What it does
 
-1. install tesseract-ocr-w64-setup-v5.0.1.20220118.
+- Reads Kurdish text from images and marks each detected word.
+- Scans photographed documents: it finds the page, straightens it, then reads the text.
 
-2. open MyProject_OCR as a pycharm project.
+## Setup
 
-3. make sure to have Python 3.9 SDK installed on your computer.
+You'll need Windows, Python 3.9 and [Tesseract 5](https://github.com/UB-Mannheim/tesseract/wiki) installed in `C:\Program Files\Tesseract-OCR`. You'll also need the `k_badini.traineddata` language file in Tesseract's `tessdata` folder.
 
-4. make sure these libraries are working:
+```bash
+pip install numpy opencv-python pytesseract imutils
+python Main.py
+```
 
-(numpy, opencv-python, pytesseract, imutils, tkintertable)
+Pick an image or a document, and the recognized text is printed to the console. You can try it with `4.png`.
 
-(if not)
+## Notes
 
-try these lines one-by-one in pycharm terminal 
+- The image you pick needs to be in the project folder.
+- On macOS or Linux, change the Tesseract path in `Wordim.py` and `scan.py`.
 
-pip install numpy
-pip install opencv-python
-pip install pytesseract
-pip install imutils
-pip install tkintertable
+## Contact
 
-5. there are some document-images in MyProject_OCR folder you can test throw them
-
-note:- this version of the Kurdish-OCR is open source and only for test
-
-feel free to contact me :)
-
-rayanchicho@gmail.com
+Questions or ideas? Open an issue or email rayanchicho@gmail.com.
